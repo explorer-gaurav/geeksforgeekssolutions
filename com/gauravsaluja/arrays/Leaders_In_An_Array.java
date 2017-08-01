@@ -14,7 +14,7 @@ package gauravsaluja.com.arrays;
  */
 
 public class Problem4 {
-	public static void findLeadersTwoLoops(int[] a, int size) {
+	public static void findLeadersViaTwoLoops(int[] a, int size) {
 		for(int i = 0; i < size; i++) {
 			int j;
 			for(j = i + 1; j < size; j++) {
@@ -29,7 +29,7 @@ public class Problem4 {
 		}
 	}
 	
-	public static void findLeadersSingleLoop(int[] a, int size) {
+	public static void findLeadersViaSingleLoop(int[] a, int size) {
 		int max = 0;
 		System.out.println();
 		

@@ -11,7 +11,7 @@ package gauravsaluja.com.arrays;
  */
 
 public class Problem3 extends BaseArrayClass {
-	public static void reverseArrayLoop(int[] a, int n) {
+	public static void reverseArrayViaLoop(int[] a, int n) {
 		int temp = -1;
 		for(int i = 0; i < n/2; i++) {
 			temp = a[i];
@@ -20,7 +20,7 @@ public class Problem3 extends BaseArrayClass {
 		}
 	}
 	
-	public static void reverseArrayRecursive(int[] a, int start, int end) {
+	public static void reverseArrayViaRecursive(int[] a, int start, int end) {
 		int temp = -1;
 		if(start >= end) {
 			return ;
