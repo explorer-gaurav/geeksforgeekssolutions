@@ -4,10 +4,7 @@ package gauravsaluja.com.arrays;
  * Created by Gaurav Saluja on 31/07/2017
  */
 
-// base class with common functionality
 public class BaseArrayClass {
-	
-	// print the array
 	public static void printArray(int[] a) {
 		for(int i = 0; i < a.length; i++) {
 			if(i == a.length - 1) {
@@ -20,8 +17,6 @@ public class BaseArrayClass {
 		System.out.println();
 	}
 	
-	// required for quick sort
-	// find the index on which partition should happen
 	public static int partitionIndex(int[] a, int low, int high) {
 		int pivot = a[high];
 		int i = (low - 1);
@@ -43,7 +38,6 @@ public class BaseArrayClass {
 		return i + 1;
 	}
 	
-	// quick sort caller function
 	public static void quickSort(int[] a, int low, int high) {
 		if(low < high) {
 			int pi = partitionIndex(a, low, high);
@@ -53,7 +47,6 @@ public class BaseArrayClass {
 		}
 	}
 	
-	// merge two sorted arrays
 	public static int[] mergeTwoSortedArrays(int[] arr1, int[] arr2, int arr1Size, int arr2Size) {
 		int i = 0;
 		int j = 0;
@@ -68,7 +61,6 @@ public class BaseArrayClass {
 			mergedArr = arr1;
 		}
 		
-		System.out.println("Total Size: " + totalSize);
 		while(k < totalSize) {
 			if(i > arr1Size) {
 				mergedArr[k] = arr2[j];
